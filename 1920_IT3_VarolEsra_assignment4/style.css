@@ -1,0 +1,67 @@
+/* dragula-related styles */
+
+.gu-mirror{position:fixed!important;margin:0!important;z-index:9999!important;opacity:.8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";filter:alpha(opacity=80)}.gu-hide{display:none!important}.gu-unselectable{-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important}.gu-transit{opacity:.2;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";filter:alpha(opacity=20)}
+
+/* end of dragula-related styles */
+body{background-color: #334139; }
+main {
+	font-size: 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+background-color: #334139;
+margin: 2rem;	}
+
+p {
+	border:  ;
+	padding: 1rem;
+
+}
+
+div {
+	touch-action: none;
+	font-family: arial;
+}
+
+h2 {
+	padding: 2rem;
+	margin: 1rem;
+	font-family: 'Dancing Script', cursive;
+	font-size: 3rem;
+	color: #DDFBD2;
+	}
+
+h3{
+padding: 0rem 2rem 2rem 2rem;;
+margin: 0rem 2rem 0rem 2rem;
+font-family: arial;
+font-weight: bold;
+color: #DDFBD2;}
+.een{
+	 	 font-size: 2rem;}
+
+
+.poem, .words {
+
+	min-height: 5rem;
+
+	margin-top: 0rem;
+	margin-left: 2rem;
+max-width: 40rem;}
+
+.poem{border: 0.5rem solid #1E2D24}
+select {
+		font-size: 2rem;
+		font-family: arial;
+		background-color: #334139;
+		border: 0.1rem solid #1E2D24;
+}
+header{background-color: #1E2D24;}
+h4, h5{color: #DDFBD2;
+			font-size: 3rem;
+			padding: 1rem;
+			margin-left: 2rem;
+			font-family: arial;
+			}
+h5{text-align: center;}
+h4{font-style: italic;}
