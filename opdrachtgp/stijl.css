@@ -1,0 +1,121 @@
+
+header{ background-color: #87FF65;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+
+h3{ font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: white}
+
+  ul {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    grid-column: 2;
+    grid-row: 2/2
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+main{ margin:1rem;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+h1{font-size: 3rem;
+  font-family: 'Roboto',sans-serif;
+  text-decoration: underline;
+  color: #2E282A;
+  text-align:right;
+  margin: 1rem;
+  grid-column: 1;
+  grid-row: 2}
+
+.één{font-family: 'Roboto',sans-serif;
+    margin: 1rem;
+    text-align: right;
+    }
+img{margin: 1rem;}
+
+.twee{font-family: 'Roboto',sans-serif;
+    margin: 1rem;
+    text-align: right; }
+.drie{font-family: 'Roboto',sans-serif;
+        margin: 1rem;
+        text-align: right; }
+.vier{font-family: 'Roboto',sans-serif;
+            margin: 1rem;
+            text-align: right; }
+h4{font-family: 'Roboto',sans-serif;
+  font-size: 1.7rem;
+  padding: 1rem}
+
+  footer{ background-color: #87FF65;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr}
+  p{font-family: 'Roboto',sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  grid-column: 1}
+  footer a{grid-column: 2}
+  h6{font-family: 'Roboto',sans-serif;
+  font-size: 1rem;
+  padding: 1rem;}
+  h2{font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    }
+  body{background-image:"watkanjijdoen.jpg";}
+@supports (grid-area: auto) {
+	/* we weten hier: ondersteuning voor grid-layout */
+
+	@media (min-width: 60rem) {
+		/* een voorbeeld van een media query: hier schrijf je de css die wordt uitgevoerd indien het scherm minstens 800px breedte biedt */
+    header{background-color: white}
+    h3{ font-family: 'Roboto', sans-serif;
+      font-size: 3rem;
+      color:lightgreen;
+      margin:2rem;
+      text-align:inherit;}
+
+      .één{font-family: 'Roboto',sans-serif;
+          margin: 1rem;
+          text-align: left;
+          font-size: 2rem
+          }
+
+      .twee{font-family: 'Roboto',sans-serif;
+          margin: 1rem;
+          text-align: left;
+          font-size: 2rem}
+      .drie{font-family: 'Roboto',sans-serif;
+              margin: 1rem;
+              text-align: left;
+              font-size: 2rem}
+      .vier{font-family: 'Roboto',sans-serif;
+                  margin: 1rem;
+                  text-align: left;
+                  font-size: 2rem}
+      h1{text-align: center;
+      font-size: 4rem;}
+      h4{text-align: right;}
+    }
+
+	}
+
+}
