@@ -1,0 +1,292 @@
+* {
+	box-sizing: border-box;
+}
+
+
+H1{font-family: HELVETICA; position: absolute; top:3rem; font-size: 5rem;}
+body{
+	display: grid;
+	background-color: lightgrey;
+	grid-gap: 1rem;
+	width: 75vw;
+	height: 75vh;
+	margin: 12.5vh auto;
+
+}
+.een{background-color: red;
+	background-image: url(modernekunst1.jpg);
+	background-size:contain;
+		height: 15rem;
+		width: 16rem;}
+.een:hover{opacity:0.5}
+.twee{background-color: green;
+	background-image: url(modernekunst2.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.twee:hover{filter:blur(0.5rem);}
+.drie{background-color: purple;
+	background-image: url(modernekunst3.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.drie:hover{position:absolute;}
+.vier{background-color: brown;
+	background-image: url(modernekunst4.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.vier:hover{transform: rotate(5deg);}
+.vijf{background-color: lightgreen;
+	background-image: url(modernekunst5.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.vijf:hover{transform: scaleY(2);}
+.zes{background-color: pink;
+	background-image: url(modernekunst6.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.zes:hover{transform: skewY(20deg);}
+.zeven{background-color: aqua;
+	background-image: url(modernekunst7.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.zeven:hover{transform: rotate(-20deg);}
+.acht{background-color: orange;
+	background-image: url(modernekunst8.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.acht:hover{opacity:0.8}
+.negen{background-color: black;
+	background-image: url(modernekunst9.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.negen:hover{transform: skewY(50deg)}
+.tien{background-color: grey;
+	background-image: url(modernekunst10.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.tien:hover{transform: skewY(-60deg)}
+.elf{background-color: blue;
+	background-image: url(modernekunst11.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.elf:hover{transform: skewY(-05deg)}
+.twaalf{background-color: yellow;
+	background-image: url(modernekunst12.jpg);
+	background-size:contain;
+	height: 15rem;
+	width: 16rem;}
+	.twaalf:hover{transform: rotate(80deg)}
+
+
+
+
+
+
+
+
+@supports (grid-area: auto) {
+	/* we weten hier: ondersteuning voor grid-layout */
+
+	@media (min-width: 55rem) {
+		body{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+			background-color: lightgrey;
+			grid-gap: 1rem;
+			width: 75vw;
+			height: auto;
+			margin: 12.5vh auto;
+			padding:2rem
+		}
+		.een{background-color: red;
+				grid-column: 1/3;
+				grid-row: 1;
+				height: 15rem;
+				width: auto;
+				background-image: url(modernekunst1.jpg);
+				}
+		.twee{background-color: green;
+				height: 15rem;
+				width: auto}
+		.drie{background-color: purple;
+				height: 15rem;
+				width: auto}
+		.vier{background-color: brown;
+				grid-column: 2/4;
+				grid-row: 2;
+				height: 15rem;
+				width: auto}
+		.vijf{background-color: lightgreen;
+				grid-column: 1/2;
+				grid-row: 3/5;
+				height: auto;
+				width: auto}
+		.zes{background-color: pink;
+			height: 15rem;
+			width: auto}
+		.zeven{background-color: aqua;
+			height: auto;
+			width: auto;
+			grid-column: 3/3;
+			grid-row: 3/5}
+		.acht{background-color: orange;
+			height: 15rem;
+			width: auto;
+			grid-column: 1/4;
+			grid-row: 6}
+		.negen{background-color: black;
+			height: auto;
+			width: auto;
+			grid-column: 1/3;
+			grid-row: 5/6;
+			}
+		.tien{background-color: grey;
+			height: 15rem;
+			width: auto}
+		.elf{background-color: blue;
+			height: 15rem;
+			width: auto;
+			grid-column: 3/3;
+			grid-row: 5/5}
+		.twaalf{background-color: yellow;
+			height: 15rem;
+			width: auto;
+			grid-column: 1/4;
+			grid-row: 7}
+
+	}
+	@media (min-width: 65rem) {
+		.een{background-color: red;
+				grid-column: 1/4;
+				grid-row: 1;
+				height: 15rem;
+				width: auto}
+		.twee{background-color: green;
+				height: 15rem;
+				width: auto}
+		.drie{background-color: purple;
+				height: 15rem;
+				width: auto;
+				grid-column: 1/3;
+				grid-row: 2;}
+		.vier{background-color: brown;
+				grid-column: 3/4;
+				grid-row: 2/4;
+				height: auto;
+				width: auto}
+		.vijf{background-color: lightgreen;
+				grid-column: 1/2;
+				grid-row: 3/5;
+				height: auto;
+				width: auto}
+		.zes{background-color: pink;
+			height: 15rem;
+			width: auto;
+			grid-column: 2/4;
+			grid-row: 4;}
+		.zeven{background-color: aqua;
+			height: auto;
+			width: auto;
+			grid-column: 2/4;
+			grid-row: 6}
+		.acht{background-color: orange;
+			height: 15rem;
+			width: auto;
+			grid-column: 1/2;
+			grid-row: 6}
+		.negen{background-color: black;
+			height: auto;
+			width: auto;
+			grid-column: 1/2;
+			grid-row: 5/6;
+			}
+		.tien{background-color: grey;
+			height: 15rem;
+			width: auto}
+		.elf{background-color: blue;
+			height: 15rem;
+			width: auto;
+			grid-column: 3/3;
+			grid-row: 5/5}
+		.twaalf{background-color: yellow;
+			height: 15rem;
+			width: auto;
+			grid-column: 1/4;
+			grid-row: 7}
+
+	}
+	@media (min-width: 75rem) {
+		.een{background-color: red;
+				grid-column: 3/3;
+				grid-row: 1;
+				height: 20rem;
+				width: auto}
+		.twee{background-color: green;
+				height: 20rem;
+				width: auto;
+				grid-column: 1/3;
+				grid-row: 1;}
+		.drie{background-color: purple;
+				height: 20rem;
+				width: auto;
+				grid-column: 1/4;
+				grid-row: 2;}
+		.vier{background-color: brown;
+				grid-column: 3/4;
+				grid-row: 3;
+				height: auto;
+				width: auto}
+		.vijf{background-color: lightgreen;
+				grid-column: 1/2;
+				grid-row: 3/5;
+				height: auto;
+				width: auto}
+		.zes{background-color: pink;
+			height: 20rem;
+			width: auto;
+			grid-column: 3/4;
+			grid-row: 4;}
+		.zeven{background-color: aqua;
+			height: auto;
+			width: auto;
+			grid-column: 2/4;
+			grid-row: 6/8}
+		.acht{background-color: orange;
+			height: 20rem;
+			width: auto;
+			grid-column: 1/2;
+			grid-row: 6}
+		.negen{background-color: black;
+			height: auto;
+			width: auto;
+			grid-column: 1/3;
+			grid-row: 5/6;
+			}
+		.tien{background-color: grey;
+			height: Auto;
+			width: auto;
+			grid-column: 2/3;
+			grid-row: 3/5}
+		.elf{background-color: blue;
+			height: 20rem;
+			width: auto;
+			grid-column: 3/3;
+			grid-row: 5/5}
+		.twaalf{background-color: yellow;
+			height: 20rem;
+			width: auto;
+			grid-column: 1/2;
+			grid-row: 7}
+
+	}
+}
